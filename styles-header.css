@@ -1,0 +1,78 @@
+/* bagian header */
+:root {
+    --accent-color: #00D54B;
+    --text-color: #1A1A1A;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: white;
+    color: var(--text-color);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* Navigation */
+nav {
+    padding: 2rem 0;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.nav-links a {
+    margin: 10px;
+}
+.nav-links a.active {
+    background-color: #22c55e; 
+    color: white; 
+}
+
+.nav-links a:hover {
+    background-color: #22c55e;
+    color: white;
+}
+
+.language-switcher {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.language-switcher a {
+    text-decoration: none;
+    padding: 0.25rem 0.5rem;
+}
+
+.language-switcher .active {
+    background-color: #007BFF;
+    color: white;
+    border-radius: 4px;
+}
+

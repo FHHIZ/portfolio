@@ -1,0 +1,76 @@
+/* myresume Section */
+.myhome {
+    background-image: url(hafiz.png);
+    background-size: 75%;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-size 3s ;
+    width: 100%;  /* Adjust width if necessary */
+    height: 100%; /* Set height to define the area it covers */
+}
+
+.mywork {
+    background-color: pink;
+    padding: 29%;
+}
+
+.myresume {
+    background-color: orange;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    padding: 4rem 0;
+    align-items: center;
+}
+
+.myresume-content h1 {
+    font-size: 5rem;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+}
+
+.myresume-content .accent {
+    color: var(--accent-color);
+}
+
+.myresume-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #666;
+    max-width: 500px;
+}
+
+.myresume-image {
+    width: 100%;
+    aspect-ratio: 3/4;
+    background-color: #F0F0F0;
+    border-radius: 999px;
+}
+.li:hover {
+    background-color: green;
+    cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+    .myresume {
+        grid-template-columns: 1fr;
+    }
+
+    .myresume-content h1 {
+        font-size: 3rem;
+    }
+
+    .nav-links {
+        position: relative;
+        display: inline;
+        
+    }
+}
+
+.mycontact {
+    background-color: azure;
+    padding: 10%;
+}
+
+

@@ -1,0 +1,57 @@
+/* infinite scroll */
+*,
+*::before
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+.wrapper {
+    background-color: transparent;
+    width: 100%;
+    max-width: 1536px;
+    margin-inline: auto;
+    position: relative;
+    height: 600px;
+    margin-top: 5rem;
+    overflow: hidden;
+}
+
+@keyframes scrollLeft {
+    to {
+        left: -200%;
+    }
+}
+
+.item {
+    z-index: -1;
+    padding-top: 10%;
+    width: 1500px;
+    height: 100px;
+    background-color: transparent;
+    color: black;
+    font-size: 125px;
+    border-radius: 6px; 
+    position: absolute;
+    left: 100%;
+    animation-name: scrollLeft;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.item1 {
+    animation-delay: calc(30s / 3 * (3 - 1) * -1);
+}
+
+.item2 {
+    animation-delay: calc(30s / 3 * (3 - 2) * -1);
+}
+
+.item3 {
+    animation-delay: calc(30s / 3 * (3 - 3) * -1);
+}
+
