@@ -3,118 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rotating Card</title>
-    <link rel="stylesheet" href="styles-header.css">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        body {
-            height: 100%;
-        }
-
-        .cardlayout {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 85vh;
-            background-color: #f5f5f5;
-        }
-
-        .card-container {
-            width: 300px;
-            height: 400px;
-            perspective: 1000px;
-            margin-right: 5px;
-            margin-left: 5px;
-        }
-
-        .card {
-            width: 100%;
-            height: 100%;
-            position: relative;
-            transform-style: preserve-3d;
-            transition: transform 0.6s;
-        }
-
-        .card-container:hover .card {
-            transform: rotateY(180deg);
-        }
-
-        .card-front, .card-back {
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            backface-visibility: hidden;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-        }
-
-        .card-front {
-            background-color: #fff;
-        }
-
-        .card-back {
-            background-color: #007bff;
-            color: white;
-            transform: rotateY(180deg);
-        }
-    </style>
+    <title>Portfolio - Work</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
+    <div class="header">
+        <div class="icon">
+            <a href="index.html"><img src="https://img.icons8.com/?size=100&id=20909&format=png&color=000000" width="50px"></a>
+        </div>
         <nav>
-            <div class="nav-content">
-                <ul class="nav-links">
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="work.html">Work</a></li>
-                    <li><a href="resume.html">Resume</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="work.html">Work</a></li>
+            </ul>
         </nav>
+        <button id="theme-toggle">Toggle Theme</button>
     </div>
-    <div class="cardlayout">
-        <div class="card-container">
-            <div class="card">
-                <div class="card-front">
-                    <img src="https://img.icons8.com/?size=100&id=20909&format=png&color=000000">
-                    <img src="https://img.icons8.com/?size=100&id=21278&format=png&color=000000">
-                    <h2>Web Developer</h2>
-                </div>
-                <div class="card-back">
-                    <li>html</li>
-                    <li>css</li>
+    <div class="content">
+        <section class="projects">
+            <h2>My Projects</h2>
+            <div class="scroll-container scroll-1">
+                <div class="scroll-content scroll-left">
+                    <div class="item">Project 1</div>
+                    <div class="item">Project 2</div>
+                    <div class="item">Project 3</div>
                 </div>
             </div>
-        </div>
-
-        <div class="card-container">
-            <div class="card">
-                <div class="card-front">
-                    <img src="https://img.icons8.com/?size=100&id=GflC6KLkdd0Y&format=png&color=000000">
-                    <h2>UI/UX Design</h2>
-                </div>
-                <div class="card-back">
-                    <li>figma</li>
+            <div class="scroll-container scroll-2">
+                <div class="scroll-content scroll-left">
+                    <div class="item">Project 4</div>
+                    <div class="item">Project 5</div>
+                    <div class="item">Project 6</div>
                 </div>
             </div>
-        </div>
-
-        <div class="card-container">
-            <div class="card">
-                <div class="card-front">
-                    <img src="https://img.icons8.com/?size=100&id=39848&format=png&color=000000">
-                    <h2>Game Developer</h2>
-                </div>
-                <div class="card-back">
-                    <li>unity</li>
-                    <li>blender</li>
+            <div class="scroll-container scroll-3">
+                <div class="scroll-content scroll-left">
+                    <div class="item">Project 7</div>
+                    <div class="item">Project 8</div>
+                    <div class="item">Project 9</div>
                 </div>
             </div>
-        </div>
+        </section>
     </div>
-</div>
+    <script src="script.js"></script>
 </body>
 </html>
